@@ -1,9 +1,11 @@
+
 const mongoose = require('mongoose')
 
-const {DOMI_APP_MONGODB_HOST,DOMI_APP_MONGODB_DATABASES}= process.env;
-const MONGODB_URI = '/${DOMI_APP_MONGODB_HOST}/${DOMI_APP_MONGODB_DATABASES}';
 
-mongoose.connect('MONGODB_URI', {
+const MONGODB_URI = 'mongodb://0.0.0.0/domi';
+
+mongoose.connect(MONGODB_URI, {
+
         useUnifiedTopology: true,
         useNewUrlParser: true
 

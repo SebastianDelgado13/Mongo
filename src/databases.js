@@ -10,5 +10,5 @@ mongoose.connect(MONGODB_URI, {
         useNewUrlParser: true
 
 })
-.then(db => console.log('conectado'))
+.then(db => console.log('conectado a BD'))
 .catch(err => console.log(err));
